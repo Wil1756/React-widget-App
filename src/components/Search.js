@@ -31,22 +31,7 @@ const Search = () => {
         search();
     }, [debouncedTerm]);
 
-    // useEffect(() => {
 
-    //     if (term && !results.length) {
-    //         search();
-    //     } else {
-    //         const timeoutId = setTimeout(() => {
-    //             if (term) {
-    //                 search();
-    //             }
-    //         }, 500);
-    //         return () => {
-    //             clearTimeout(timeoutId);
-    //         };
-    //     }
-
-    // }, [term]);
     const renderedResults = results.map(result => {
         return (
             <div key={result.pageid} className="item">
